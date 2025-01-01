@@ -12,8 +12,8 @@ COPY . .
 RUN docker-php-ext-install mysqli
 
 # Expose a port (if your application listens on a specific port)
-EXPOSE 80
+EXPOSE 8080
 
 # Define the command to start your PHP application
-CMD ["php", "-S", "0.0.0.0:80"]
+CMD ["php", "-S", "0.0.0.0:8080"]
 
